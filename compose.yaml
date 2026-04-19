@@ -7,3 +7,12 @@ services:
     ports:
       - '8080:8080'
     restart: "no"
+
+  api2:
+    build: .
+    container_name: fastapi-application-2
+    environment:
+      PORT: 8082
+    ports:
+      - '8082:8082'
+    restart: "no"

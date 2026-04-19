@@ -19,3 +19,5 @@
   --region=europe-west2
 
 APKA JEST PUBLICZNIE DOSTĘPNA, SPRAWDŹ TELEFON
+
+## Cloud 
