@@ -20,4 +20,6 @@
 
 APKA JEST PUBLICZNIE DOSTĘPNA, SPRAWDŹ TELEFON
 
-## Cloud 
+## Kubernetes: 
+https://www.youtube.com/watch?v=cyGF_PLBx4c
+
