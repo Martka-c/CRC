@@ -37,3 +37,20 @@ def create_document():
     )
 
     return {"message": "Document created"}
+
+
+@app.post(
+    "/wypushuj-do-kolejki"
+)
+def push_to_queue():
+    import os
+    from google.cloud import pubsub_v1
+
+    publisher = pubsub_v1.PublisherClient()
+    topic_name = 'projects/{project_id}/topics/{topic}'.format(
+        project_id="project-f917d675-ded5-498e-a47",
+        topic='pierwsza-kolejka',  # Set this to something appropriate.
+    )
+    future = publisher.publish(topic_name, b'My first message!', spam='eggs')
+    future.result()
+    return {"message": "Pushed to queue"}
