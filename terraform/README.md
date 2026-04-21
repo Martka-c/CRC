@@ -96,7 +96,7 @@ You can customize the deployment by modifying values in `variables.tf` or by cre
 
 ```hcl
 resource_group_name = "my-custom-rg"
-location            = "eastus"
+location            = "westus"
 ```
 
 ## Troubleshooting
